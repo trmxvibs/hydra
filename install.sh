@@ -10,6 +10,7 @@ echo "           SIT BACK & RELEX"
 sleep 2
 echo "           DON'T TURF OF YOUR DATA"
 sleep 2
+clear
  toilet 5 | lolcat
  sleep 1
  clear
