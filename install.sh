@@ -62,6 +62,7 @@ echo " prepraing device for installing hydra"
 sleep 5
 echo " if any quary please watch video on my channel"
 xdg-open https://youtu.be/5OgN_0a-k9U
+cd $HOME
 git clone https://github.com/vanhauser-thc/thc-hydra
 clear
 echo " Hydra repository clone success" | lolcat
