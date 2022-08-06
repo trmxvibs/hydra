@@ -25,48 +25,50 @@ sleep 2
  toilet 1 | lolcat
  sleep 1
  clear
- echo "     Checking For Updates"
+ echo "              Checking For System Updates" | lolcat
  sleep 3
  apt-get update -y
  clear
- echo "     Checking For UPGRADES"
+ echo "              Checking For  System UPGRADES" | lolcat
  sleep 3
  apt-get upgrade -y
  clear
- echo "   INSTALLING PYTHON ALL_VERSION"
+ echo "   INSTALLING PYTHON ALL_VERSION" | lolcat
  sleep 3
  pkg install python python2 python3 -y
  clear
- echo "      Installing openssl-tool"
+ echo "      Installing openssl-tool" | lolcat
  echo "    if not installing by this tool install it mannualy"
  sleep 3
 pkg install openssl-tool -y
 clear
-echo "        installing curl"
+echo "        installing curl" | lolcat
 sleep 3 
 pkg install curl -y
 clear
-echo "        installing wget"
+echo "        installing wget" | lolcat
 sleep 3
 pkg install wget -y
 clear
-echo "         installing perl"
+echo "         installing perl" | lolcat
 pkg install perl -y
 clear
-echo "       installing openssl"
+echo "       installing openssl" | lolcat
 sleep 3
 pkg install openssl -y
 echo " PLEASE WAIT "
 sleep 2
-echo " prepraing device for installing hydra"
+echo " prepraing device for installing hydra" | lolcat
 sleep 5
 echo " if any quary please watch video on my channel"
+sleep 5
 xdg-open https://youtu.be/5OgN_0a-k9U
-cd $HOME
+sleep 20 
 git clone https://github.com/vanhauser-thc/thc-hydra
 clear
 echo " Hydra repository clone success" | lolcat
 sleep 3
+echo " Prepare to install hydra" | lolcat
 cd $HOME
 cd thc-hydra
 chmod +x *
@@ -74,48 +76,20 @@ chmod +x *
 make
 make install
 clear
+figlet -c HYDRA | lolcat -p 15 -F 15 -S 15 -a -d 15 -s 15 -t
+figlet -c INSTALL | lolcat -p 15 -F 15 -S 15 -a -d 15 -s 15 -t 
+figlet -c COMPLETE | lolcat -p 15 -F 15 -S 15 -a -d 15 -s 15 -t 
+sleep 5
 echo "             hydra installing successfully" | lolcat
 sleep 5
+echo "    You Can Use Now" | lolcat
 echo " type ./hydra to start hydra tool"
-sleep 5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+sleep 10
+clear
+cd $HOME
+ls
+sleep 2
+cd thc-hydra
+ls
+sleep 2
+./hydra
