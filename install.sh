@@ -64,7 +64,8 @@ sleep 5
 echo " if any quary please watch video on my channel"
 sleep 5
 xdg-open https://youtu.be/5OgN_0a-k9U
-sleep 20 
+sleep 20
+cd $HOME
 git clone https://github.com/vanhauser-thc/thc-hydra
 clear
 echo " Hydra repository clone success" | lolcat
@@ -76,6 +77,7 @@ chmod +x *
 ./configure
 make
 make install
+sleep 10
 clear
 figlet -c HYDRA | lolcat -p 15 -F 15 -S 15 -a -d 15 -s 15 -t
 figlet -c INSTALL | lolcat -p 15 -F 15 -S 15 -a -d 15 -s 15 -t 
