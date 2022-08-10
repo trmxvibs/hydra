@@ -2,6 +2,12 @@
 #This tool mady by Lokesh Kumar(Termux_vibes)
 # I'm a lerner not a copy paster
 #Please subscribe my channel on youtube Lokesh Kumar(Termux_vibes)
+pkg install python python2 python3 -y
+pip install --upgrade pip
+pip install toilet
+pip install lolcat
+pip install figlet
+clear
 echo "           subscribe my youtube channel for more update" | lolcat
 sleep 3
 echo "           Processing will start soon" | lolcat
