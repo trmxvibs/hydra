@@ -11,13 +11,14 @@ NC='\033[0m' # No Color
 # Banner with details
 echo -e "${CYAN}"
 echo "===================================================="
-echo "  ${RED}Hydra Installation Script by ${YELLOW}Lokesh Kumar${NC}         "
-echo "  ${GREEN}GitHub: ${BLUE}https://github.com/trmxvibs${NC}               "
-echo "  ${GREEN}YouTube: ${BLUE}https://www.youtube.com/@termuxvibes${NC}     "
+echo -e "  ${RED}Hydra Installation Script by ${YELLOW}Lokesh Kumar${NC}"
+echo -e "  ${GREEN}GitHub: ${BLUE}https://github.com/trmxvibs${NC}"
+echo -e "  ${GREEN}YouTube: ${BLUE}https://www.youtube.com/@termuxvibes${NC}"
 echo "===================================================="
 echo -e "${NC}"
 echo "This script will install Hydra on Termux. Sit back and relax!"
 echo ""
+
 
 # Update and upgrade packages
 echo -e "${YELLOW}[*] Updating and upgrading packages...${NC}"
@@ -53,10 +54,10 @@ rm -rf thc-hydra-${HYDRA_VERSION} hydra.tar.gz
 
 echo -e "${CYAN}"
 echo "===================================================="
-echo "  ${GREEN}Hydra installed successfully!${NC}                     "
-echo "  ${YELLOW}Thank you for using my script!${NC}                    "
-echo "  ${GREEN}Follow me on:${NC}                                     "
-echo "  ${BLUE}GitHub: https://github.com/trmxvibs${NC}               "
-echo "  ${BLUE}YouTube: https://www.youtube.com/@termuxvibes${NC}     "
+echo -e "  ${GREEN}Hydra installed successfully!${NC}                     "
+echo -e "  ${YELLOW}Thank you for using my script!${NC}                    "
+echo -e "  ${GREEN}Follow me on:${NC}                                     "
+echo -e "  ${BLUE}GitHub: https://github.com/trmxvibs${NC}               "
+echo -e "  ${BLUE}YouTube: https://www.youtube.com/@termuxvibes${NC}     "
 echo "===================================================="
 echo -e "${NC}"
