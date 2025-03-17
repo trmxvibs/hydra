@@ -1,54 +1,62 @@
 #!/bin/bash
 
+# ANSI Color Codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[0;34m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
 # Banner with details
-echo ""
+echo -e "${CYAN}"
 echo "===================================================="
-echo "  Hydra Installation Script by Lokesh Kumar         "
-echo "  GitHub: https://github.com/trmxvibs               "
-echo "  YouTube: https://www.youtube.com/@termuxvibes     "
+echo "  ${RED}Hydra Installation Script by ${YELLOW}Lokesh Kumar${NC}         "
+echo "  ${GREEN}GitHub: ${BLUE}https://github.com/trmxvibs${NC}               "
+echo "  ${GREEN}YouTube: ${BLUE}https://www.youtube.com/@termuxvibes${NC}     "
 echo "===================================================="
-echo ""
+echo -e "${NC}"
 echo "This script will install Hydra on Termux. Sit back and relax!"
 echo ""
 
 # Update and upgrade packages
-echo "[*] Updating and upgrading packages..."
+echo -e "${YELLOW}[*] Updating and upgrading packages...${NC}"
 pkg update -y && pkg upgrade -y
 
 # Install necessary dependencies
-echo "[*] Installing dependencies..."
+echo -e "${YELLOW}[*] Installing dependencies...${NC}"
 pkg install -y x11-repo
 pkg install -y clang make openssl openssl-tool wget openssh coreutils gtk2 gtk3
 
 # Download Hydra from the official repository
 HYDRA_VERSION="9.5"  # Replace with the latest version if needed
-echo "[*] Downloading Hydra (v${HYDRA_VERSION})..."
+echo -e "${YELLOW}[*] Downloading Hydra (v${HYDRA_VERSION})...${NC}"
 wget https://github.com/vanhauser-thc/thc-hydra/archive/v${HYDRA_VERSION}.tar.gz -O hydra.tar.gz
 
 # Extract the downloaded file
-echo "[*] Extracting Hydra..."
+echo -e "${YELLOW}[*] Extracting Hydra...${NC}"
 tar -xzvf hydra.tar.gz
 
 # Navigate to the extracted directory
 cd thc-hydra-${HYDRA_VERSION}
 
 # Configure, compile, and install Hydra
-echo "[*] Configuring and compiling Hydra..."
+echo -e "${YELLOW}[*] Configuring and compiling Hydra...${NC}"
 ./configure --prefix=$PREFIX
 make
 make install
 
 # Clean up
-echo "[*] Cleaning up..."
+echo -e "${YELLOW}[*] Cleaning up...${NC}"
 cd ..
 rm -rf thc-hydra-${HYDRA_VERSION} hydra.tar.gz
 
-echo ""
+echo -e "${CYAN}"
 echo "===================================================="
-echo "  Hydra installed successfully!                     "
-echo "  Thank you for using my script!                    "
-echo "  Follow me on:                                     "
-echo "  GitHub: https://github.com/trmxvibs               "
-echo "  YouTube: https://www.youtube.com/@termuxvibes     "
+echo "  ${GREEN}Hydra installed successfully!${NC}                     "
+echo "  ${YELLOW}Thank you for using my script!${NC}                    "
+echo "  ${GREEN}Follow me on:${NC}                                     "
+echo "  ${BLUE}GitHub: https://github.com/trmxvibs${NC}               "
+echo "  ${BLUE}YouTube: https://www.youtube.com/@termuxvibes${NC}     "
 echo "===================================================="
-echo ""
+echo -e "${NC}"
