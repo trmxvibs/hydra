@@ -1,10 +1,15 @@
-# Hydra Installation Script for Termux
-This repository contains a script to easily install Hydra (a popular password-cracking tool) on Termux. The script automates the entire process, including dependency installation, downloading, compiling, and setting up Hydra.
+# <h1 align="center">$${\color{green}Hydra-Installion-Termux}$$</h1>
 
 ---
 
-# Features
-Easy Installation: Just run one command, and the script will handle everything.
+
+**`This repository contains a script to easily install Hydra (a popular password-cracking tool) on Termux. The script automates the entire process, including dependency installation, downloading, compiling, and setting up Hydra.`**
+
+---
+
+##  $${\color{red}Installation}$$
+
+`Easy Installation: Just run one command, and the script will handle everything.`
 
 User-Friendly: Provides clear progress updates during the installation process.
 
@@ -12,37 +17,53 @@ Cleanup: Automatically removes temporary files after installation.
 
 ---
 
-# *How to Install*
-Run the following command in your Termux terminal to install Hydra:
+#  $${\color{red}How- To- Install}$$
+
+`Run the following command in your Termux terminal to install Hydra:`
 
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/trmxvibs/hydra/main/hydra.sh)"
 ```
-## Or, if you prefer using `wget`:
+##  if you prefer using `wget`:
 ```sh
 bash -c "$(wget -O- https://raw.githubusercontent.com/trmxvibs/hydra/main/hydra.sh)"
 ```
 ----
 
 # What the Script Does
-Updates and upgrades Termux packages.
+**Updates and upgrades Termux packages.**
 
-Installs necessary dependencies (e.g., openssl, gtk2, gtk3, etc.).
+**Installs necessary dependencies (e.g., openssl, gtk2, gtk3, etc.).**
 
-Downloads the latest version of Hydra from the official repository.
+**Downloads the latest version of Hydra from the official repository**.
 
-Compiles and installs Hydra.
+**Compiles and installs Hydra.**
 
-Cleans up temporary files after installation.
+**Cleans up temporary files after installation.**
 
 ---
 
-**About the Creator**
-This script is created and maintained by Lokesh Kumar.
+# $${\color{red}ScreenShot}$$
 
-GitHub: trmxvibs
+![image](https://github.com/user-attachments/assets/c2ecf293-7663-4700-a6b2-6fa886c682b9)
 
-YouTube: Termux Vibes
+---
+
+![image](https://github.com/user-attachments/assets/0ce20924-e7a1-4a16-81ee-82be97e16011)
+
+
+---
+
+
+# **About the Creator**
+### $${\color{red}This -script- is- created- and- maintained- by- Lokesh- Kumar.}$$
+
+
+----
+
+# [YouTube](https://www.youtube.com/@termuxvibes)
+
+---
 
 If you find this script helpful, consider supporting me by subscribing to my YouTube channel and starring this repository on GitHub!
 
@@ -54,11 +75,11 @@ If you want to contribute to this project, follow these steps:
 
  # Fork the repository.
 
-Create a new branch (git checkout -b feature/YourFeatureName).
+Create a new branch `(git checkout -b feature/YourFeatureName)`.
 
-Commit your changes (git commit -m 'Add some feature').
+Commit your changes `(git commit -m 'Add some feature')`.
 
-Push to the branch (git push origin feature/YourFeatureName).
+Push to the branch `(git push origin feature/YourFeatureName)`.
 
 Open a Pull Request.
 
