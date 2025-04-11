@@ -68,6 +68,22 @@ rm -rf thc-hydra-${HYDRA_VERSION} hydra.tar.gz
 clear
 sleep 2
 
+# Adding C++ and Java code lines as placeholders
+# echo -e "${YELLOW}[*] Adding C++ and Java code lines...${NC}"
+sleep 2
+# C++ Code Placeholder
+# int main() {
+#     std::cout << "Hello from C++!" << std::endl;
+#     return 0;
+# }
+
+# Java Code Placeholder
+# public class Main {
+#     public static void main(String[] args) {
+#         System.out.println("Hello from Java!");
+#     }
+# }
+
 echo -e "${CYAN}"
 echo "===================================================="
 echo -e "  ${GREEN}Hydra installed successfully!${NC}                     "
@@ -78,4 +94,3 @@ echo -e "  ${BLUE}YouTube: https://www.youtube.com/@termuxvibes${NC}     "
 echo "===================================================="
 echo -e "${NC}"
 sleep 10
-
